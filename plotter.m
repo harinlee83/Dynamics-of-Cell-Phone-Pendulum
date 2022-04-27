@@ -1,4 +1,5 @@
-% This function reads in attributes of a filename and plots it
+% This function reads in attributes of a filename and plots it for analysis
+% part 2
 
 function plotter(angle,length)
     if length == "Long"
@@ -11,6 +12,7 @@ function plotter(angle,length)
 
     file1 = append("./csv files/l2", length, "Theta",angle,".csv");
 
+    % Arbitrary start and end indicies for acceleration data
     startIndex = 1000;
     endIndex = 1400;
 
